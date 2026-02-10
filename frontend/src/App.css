@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ql-container {
+  min-height: 300px;
+  font-family: 'Inter', sans-serif;
+}
+
+.ql-editor {
+  min-height: 300px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.ql-toolbar {
+  border: 1px solid #E2E8F0 !important;
+  border-bottom: none !important;
+  background: #F8FAFC;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.ql-container {
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background: white;
+}

@@ -1,0 +1,145 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Creative Designer",
+    "aesthetic": "Swiss Minimalist / High-Utility",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First (Trust & Clarity)",
+      "Content is King",
+      "Zoom In (Detail Oriented)",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "theme": {
+    "mode": "light",
+    "strategy": "Swiss High-Contrast",
+    "description": "A clean, spacious, and authority-driven interface. White backgrounds, stark black text, and precise borders. Color is used only for function and focus."
+  },
+  "typography": {
+    "headings": {
+      "family": "Manrope, sans-serif",
+      "weights": ["600", "700", "800"],
+      "usage": "Use for all page titles, section headers, and modal titles. Tight tracking (-0.02em)."
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for all standard text, inputs, and table data. Normal tracking."
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "Use for code blocks, API keys, and ID strings."
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#0F172A",
+      "primary_foreground": "#F8FAFC",
+      "secondary": "#F1F5F9",
+      "secondary_foreground": "#0F172A",
+      "accent": "#4F46E5",
+      "accent_foreground": "#FFFFFF",
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "border": "#E2E8F0",
+      "muted": "#64748B",
+      "destructive": "#EF4444",
+      "success": "#10B981",
+      "warning": "#F59E0B"
+    },
+    "rules": [
+      "Never use pure black (#000000). Use Slate 900 (#0F172A).",
+      "Backgrounds should be white (#FFFFFF) or very light slate (#F8FAFC).",
+      "Borders should be subtle but visible (#E2E8F0).",
+      "Use the Accent color (#4F46E5) ONLY for primary actions (Save, Publish, Create)."
+    ]
+  },
+  "layout": {
+    "grid_system": {
+      "dashboard": "grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "form": "grid-cols-1 md:grid-cols-2 gap-8",
+      "media_gallery": "grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-10",
+      "section_gap": "gap-8",
+      "item_gap": "gap-4"
+    },
+    "structure": {
+      "sidebar": "Fixed width (w-64), collapsible, border-r border-border bg-surface/50 backdrop-blur-xl",
+      "main_content": "flex-1 overflow-y-auto bg-background",
+      "page_header": "flex justify-between items-center mb-8 pb-4 border-b border-border/40"
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "rounded-md font-medium transition-all duration-200",
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm hover:shadow-md",
+      "secondary": "bg-white border border-input hover:bg-accent hover:text-accent-foreground",
+      "ghost": "hover:bg-secondary hover:text-secondary-foreground"
+    },
+    "cards": {
+      "style": "bg-white border border-border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200",
+      "content_padding": "p-6"
+    },
+    "inputs": {
+      "style": "h-10 rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "tables": {
+      "style": "w-full caption-bottom text-sm",
+      "header": "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted",
+      "row": "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-md bg-white/70 border border-white/20 shadow-sm",
+    "shadows": {
+      "soft": "0 2px 10px rgba(0,0,0,0.03)",
+      "hover": "0 10px 30px rgba(0,0,0,0.06)"
+    },
+    "borders": "1px solid #E2E8F0"
+  },
+  "motion": {
+    "transitions": "all 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+    "hover_lift": "transform -translate-y-0.5 transition-transform duration-200"
+  },
+  "assets": {
+    "images": {
+      "login_background": {
+        "url": "https://images.unsplash.com/photo-1656991955761-8b1a8eb24049?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Abstract minimal white waves",
+        "usage": "Full screen background for login page with overlay"
+      },
+      "user_avatar_placeholder": {
+        "url": "https://images.unsplash.com/photo-1765648636080-eea4cb482355?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Professional user avatar",
+        "usage": "Default avatar for admin user"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width={1.5} size={20}"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Implement the Sidebar layout as the primary wrapper for all protected routes.",
+    "Use the 'Bento' grid strategy for the Dashboard overview (mix of 1x1, 2x1, and 2x2 cards).",
+    "For the Page Builder, create a split-screen layout: Left side for block editing, Right side for live preview.",
+    "Ensure all forms use 'react-hook-form' with 'zod' validation.",
+    "Use 'sonner' for all toast notifications (success/error).",
+    "Implement a 'Command Palette' (cmd+k) for quick navigation using a dialog component.",
+    "The Rich Text Editor should feel like Notion: minimal toolbar, slash commands support (if possible), and clean typography.",
+    "Media Library should support drag-and-drop uploads and grid/list view toggles."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts. Use asymmetric grids.",
+    "Create depth through layered design elements (z-index).",
+    "Use glass-morphism effects for sticky headers and overlays.",
+    "Add micro-interactions to all buttons and cards (hover lift, scale).",
+    "Use 2-3x more spacing than typical designs (p-8 instead of p-4).",
+    "Never use 'transition: all'. Animate specific properties.",
+    "Ensure all interactive elements have 'data-testid' attributes."
+  ]
+}
