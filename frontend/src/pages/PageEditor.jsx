@@ -33,6 +33,7 @@ export const PageEditor = () => {
     if (isEditMode) {
       fetchPage();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchPage = async () => {
