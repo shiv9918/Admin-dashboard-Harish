@@ -110,11 +110,7 @@ export const Login = () => {
             </button>
           </form>
 
-          <div className="mt-6 p-4 bg-secondary/50 rounded-md">
-            <p className="text-xs text-muted text-center">
-              Demo: admin@example.com / password123
-            </p>
-          </div>
+  
         </div>
       </div>
     </div>
